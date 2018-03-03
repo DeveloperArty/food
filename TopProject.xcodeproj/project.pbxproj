@@ -12,6 +12,12 @@
 		84701D2D204AC252006FD291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84701D2B204AC252006FD291 /* Main.storyboard */; };
 		84701D2F204AC252006FD291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84701D2E204AC252006FD291 /* Assets.xcassets */; };
 		84701D32204AC252006FD291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84701D30204AC252006FD291 /* LaunchScreen.storyboard */; };
+		84701D3A204AE09A006FD291 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D39204AE09A006FD291 /* MainPageViewController.swift */; };
+		84701D41204AE6B3006FD291 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D40204AE6B3006FD291 /* TodayViewController.swift */; };
+		84701D43204AE6C1006FD291 /* ToBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */; };
+		84701D45204AE918006FD291 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D44204AE918006FD291 /* Router.swift */; };
+		84701D47204AE93D006FD291 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D46204AE93D006FD291 /* MainRouter.swift */; };
+		84701D4A204AEA18006FD291 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D49204AEA18006FD291 /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +27,12 @@
 		84701D2C204AC252006FD291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84701D2E204AC252006FD291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84701D31204AC252006FD291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84701D33204AC252006FD291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84701D39204AE09A006FD291 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		84701D40204AE6B3006FD291 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBuyListViewController.swift; sourceTree = "<group>"; };
+		84701D44204AE918006FD291 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		84701D46204AE93D006FD291 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		84701D49204AEA18006FD291 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +66,74 @@
 			isa = PBXGroup;
 			children = (
 				84701D27204AC252006FD291 /* AppDelegate.swift */,
-				84701D29204AC252006FD291 /* ViewController.swift */,
-				84701D2B204AC252006FD291 /* Main.storyboard */,
-				84701D2E204AC252006FD291 /* Assets.xcassets */,
-				84701D30204AC252006FD291 /* LaunchScreen.storyboard */,
-				84701D33204AC252006FD291 /* Info.plist */,
+				84701D3C204AE0EA006FD291 /* Presentation */,
+				84701D3B204AE0A0006FD291 /* Supporting */,
 			);
 			path = TopProject;
+			sourceTree = "<group>";
+		};
+		84701D3B204AE0A0006FD291 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				84701D2E204AC252006FD291 /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		84701D3C204AE0EA006FD291 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84701D4B204AEA26006FD291 /* Launch */,
+				84701D3F204AE591006FD291 /* Common */,
+				84701D3D204AE578006FD291 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84701D3D204AE578006FD291 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84701D2B204AC252006FD291 /* Main.storyboard */,
+				84701D48204AE944006FD291 /* Helper */,
+				84701D3E204AE586006FD291 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84701D3E204AE586006FD291 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84701D39204AE09A006FD291 /* MainPageViewController.swift */,
+				84701D40204AE6B3006FD291 /* TodayViewController.swift */,
+				84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84701D3F204AE591006FD291 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84701D44204AE918006FD291 /* Router.swift */,
+				84701D29204AC252006FD291 /* ViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84701D48204AE944006FD291 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84701D46204AE93D006FD291 /* MainRouter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84701D4B204AEA26006FD291 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				84701D49204AEA18006FD291 /* LaunchViewController.swift */,
+				84701D30204AC252006FD291 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84701D41204AE6B3006FD291 /* TodayViewController.swift in Sources */,
+				84701D47204AE93D006FD291 /* MainRouter.swift in Sources */,
 				84701D2A204AC252006FD291 /* ViewController.swift in Sources */,
+				84701D3A204AE09A006FD291 /* MainPageViewController.swift in Sources */,
 				84701D28204AC252006FD291 /* AppDelegate.swift in Sources */,
+				84701D45204AE918006FD291 /* Router.swift in Sources */,
+				84701D43204AE6C1006FD291 /* ToBuyListViewController.swift in Sources */,
+				84701D4A204AEA18006FD291 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
