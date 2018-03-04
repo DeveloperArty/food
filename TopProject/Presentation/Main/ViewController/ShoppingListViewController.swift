@@ -21,6 +21,10 @@ class ShoppingListViewController: UIViewController {
                 ("Огурцы", "300 г."),
                 ("Лонганы", "500 г.")]
 
+    var showMsg: Bool {
+        return tableView.indexPathsForSelectedRows?.count == data.count
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -36,23 +40,37 @@ class ShoppingListViewController: UIViewController {
 extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! ShoppingTableViewCell
-        cell.selectedFlag = !cell.selectedFlag
+        if let cell = tableView.cellForRow(at: indexPath) as? ShoppingTableViewCell {
+            cell.selectedFlag = !cell.selectedFlag
+        }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! ShoppingTableViewCell
-        cell.selectedFlag = !cell.selectedFlag
+        if let cell = tableView.cellForRow(at: indexPath) as? ShoppingTableViewCell {
+            cell.selectedFlag = !cell.selectedFlag
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return data.count + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "shopping_cell", for: indexPath) as! ShoppingTableViewCell
-        cell.configure(data[indexPath.row])
-        cell.frame = CGRect(x: cell.frame.minX, y: cell.frame.minY, width: self.view.frame.width, height: 216)
-        return cell 
+        let cell: UITableViewCell
+        if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "header_cell", for: indexPath)
+        } else if indexPath.row == data.count + 1 {
+            if showMsg {
+                cell = tableView.dequeueReusableCell(withIdentifier: "msg_cell", for: indexPath)
+            } else {
+                cell = UITableViewCell()
+            }
+        } else {
+            let _cell = tableView.dequeueReusableCell(withIdentifier: "shopping_cell", for: indexPath) as! ShoppingTableViewCell
+            _cell.configure(data[indexPath.row - 1])
+            cell = _cell
+        }
+        cell.selectionStyle = .none
+        return cell
     }
 }

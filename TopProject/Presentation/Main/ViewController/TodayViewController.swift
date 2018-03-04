@@ -28,8 +28,16 @@ class TodayViewController: UIViewController {
 }
 
 extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toMeal", sender: nil)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count + 1
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.frame = CGRect(x: cell.frame.minX, y: cell.frame.minY, width: self.view.frame.width, height: 216)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,6 +49,7 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource {
             _cell.configure(data[indexPath.row - 1])
             cell = _cell
         }
+        cell.frame = CGRect(x: cell.frame.minX, y: cell.frame.minY, width: self.view.frame.width, height: 216)
         cell.selectionStyle = .none
         return cell
     }
