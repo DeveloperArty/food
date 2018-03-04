@@ -52,6 +52,7 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shopping_cell", for: indexPath) as! ShoppingTableViewCell
         cell.configure(data[indexPath.row])
+        cell.frame = CGRect(x: cell.frame.minX, y: cell.frame.minY, width: self.view.frame.width, height: 216)
         return cell 
     }
 }
