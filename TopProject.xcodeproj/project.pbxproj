@@ -14,7 +14,6 @@
 		84701D32204AC252006FD291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84701D30204AC252006FD291 /* LaunchScreen.storyboard */; };
 		84701D3A204AE09A006FD291 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D39204AE09A006FD291 /* MainPageViewController.swift */; };
 		84701D41204AE6B3006FD291 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D40204AE6B3006FD291 /* TodayViewController.swift */; };
-		84701D43204AE6C1006FD291 /* ToBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */; };
 		84701D45204AE918006FD291 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D44204AE918006FD291 /* Router.swift */; };
 		84701D47204AE93D006FD291 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D46204AE93D006FD291 /* MainRouter.swift */; };
 		84701D4A204AEA18006FD291 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84701D49204AEA18006FD291 /* LaunchViewController.swift */; };
@@ -23,6 +22,10 @@
 		84AC0110204B0F130076FD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AC010F204B0F130076FD71 /* Main.storyboard */; };
 		84AC0112204B10710076FD71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC0111204B10710076FD71 /* CalendarView.swift */; };
 		84AC0114204B10800076FD71 /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC0113204B10800076FD71 /* CalendarDayView.swift */; };
+		84AC0116204B2CAD0076FD71 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC0115204B2CAD0076FD71 /* ShoppingListViewController.swift */; };
+		84AC011A204B2F000076FD71 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC0119204B2F000076FD71 /* ShoppingTableViewCell.swift */; };
+		84AC011C204B58860076FD71 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC011B204B58860076FD71 /* ImageTableViewCell.swift */; };
+		84AC011E204B5B920076FD71 /* Сложность.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC011D204B5B920076FD71 /* Сложность.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,6 @@
 		84701D31204AC252006FD291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84701D39204AE09A006FD291 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		84701D40204AE6B3006FD291 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBuyListViewController.swift; sourceTree = "<group>"; };
 		84701D44204AE918006FD291 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		84701D46204AE93D006FD291 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		84701D49204AEA18006FD291 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,10 @@
 		84AC010F204B0F130076FD71 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84AC0111204B10710076FD71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		84AC0113204B10800076FD71 /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
+		84AC0115204B2CAD0076FD71 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		84AC0119204B2F000076FD71 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		84AC011B204B58860076FD71 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		84AC011D204B5B920076FD71 /* Сложность.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сложность.swift"; sourceTree = "<group>"; };
 		C4A8F0ED4BF522E1E81DA237 /* Pods_TopProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5E461DA4463CEE25EB30D6 /* Pods-TopProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopProject/Pods-TopProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,9 +132,11 @@
 		84701D3D204AE578006FD291 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84AC010F204B0F130076FD71 /* Main.storyboard */,
 				84701D3E204AE586006FD291 /* ViewController */,
 				84701D48204AE944006FD291 /* Helper */,
 				848F0020204AF3EF00931D1C /* View */,
+				84AC011F204B5B990076FD71 /* Model */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -136,10 +144,9 @@
 		84701D3E204AE586006FD291 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				84AC010F204B0F130076FD71 /* Main.storyboard */,
 				84701D39204AE09A006FD291 /* MainPageViewController.swift */,
 				84701D40204AE6B3006FD291 /* TodayViewController.swift */,
-				84701D42204AE6C1006FD291 /* ToBuyListViewController.swift */,
+				84AC0115204B2CAD0076FD71 /* ShoppingListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -176,8 +183,18 @@
 			children = (
 				84AC0111204B10710076FD71 /* CalendarView.swift */,
 				84AC0113204B10800076FD71 /* CalendarDayView.swift */,
+				84AC0119204B2F000076FD71 /* ShoppingTableViewCell.swift */,
+				84AC011B204B58860076FD71 /* ImageTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84AC011F204B5B990076FD71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84AC011D204B5B920076FD71 /* Сложность.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +277,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TopProject/Pods-TopProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +332,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AC0112204B10710076FD71 /* CalendarView.swift in Sources */,
+				84AC011A204B2F000076FD71 /* ShoppingTableViewCell.swift in Sources */,
 				848F0028204AF7ED00931D1C /* UIViewEx.swift in Sources */,
 				84701D41204AE6B3006FD291 /* TodayViewController.swift in Sources */,
 				84701D47204AE93D006FD291 /* MainRouter.swift in Sources */,
 				84701D2A204AC252006FD291 /* ViewController.swift in Sources */,
 				84701D3A204AE09A006FD291 /* MainPageViewController.swift in Sources */,
 				84701D28204AC252006FD291 /* AppDelegate.swift in Sources */,
+				84AC011C204B58860076FD71 /* ImageTableViewCell.swift in Sources */,
 				84701D45204AE918006FD291 /* Router.swift in Sources */,
-				84701D43204AE6C1006FD291 /* ToBuyListViewController.swift in Sources */,
+				84AC011E204B5B920076FD71 /* Сложность.swift in Sources */,
+				84AC0116204B2CAD0076FD71 /* ShoppingListViewController.swift in Sources */,
 				84701D4A204AEA18006FD291 /* LaunchViewController.swift in Sources */,
 				84AC0114204B10800076FD71 /* CalendarDayView.swift in Sources */,
 			);
